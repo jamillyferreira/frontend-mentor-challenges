@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,400;0,600;0,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Grey-900);
+}
+.profile-card {
+  width: 340px;
+  background-color: var(--Grey-800);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+  color: var(--White);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.profile-card_avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+.profile-card_name {
+  font-size: 24px;
+}
+.profile-card_location {
+  font-size: 14px;
+  color: var(--Green);
+}
+.profile-card_bio {
+  font-size: 14px;
+  color: var(--Grey-700);
+  font-weight: 700;
+  margin: 10px  0;
+}
+.social-links_list {
+  list-style: none;
+}
+.button {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  background-color: var(--Grey-700);
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  transition: background-color 0.3s ease;
+}
+.button:last-child {
+  margin-bottom: 0;
+}
+.button a {
+  color: var(--White);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--Green);
+}
+
+.button:hover a {
+  color: var(--Grey-900);
+}
