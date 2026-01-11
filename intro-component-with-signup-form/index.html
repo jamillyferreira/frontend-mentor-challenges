@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero__title">Learn to code by watching others</h1>
+        <p class="hero__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+
+      <section>
+        <div class="trial-banner">
+          <p class="trial-banner__text">
+            <strong class="trial-banner__highlight">Try it free 7 days</strong>
+            then $20/mo. thereafter
+          </p>
+        </div>
+        <form class="form">
+          <!-- Campo Nome -->
+          <div class="form-field">
+            <input
+              type="text"
+              id="firstName"
+              class="form-field__input"
+              placeholder="First Name"
+              aria-describedby="firstName-error"
+              aria-invalid="false"
+            />
+            <img
+              src="images/icon-error.svg"
+              class="form-field__icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <span id="firstName-error" class="form-field__error" hidden
+              >First Name cannot be empty</span
+            >
+          </div>
+
+          <!-- Campo Sobrenome -->
+          <div class="form-field">
+            <input
+              type="text"
+              id="lastName"
+              class="form-field__input"
+              placeholder="Last Name"
+              aria-describedby="lastName-error"
+              aria-invalid="false"
+            />
+            <img
+              src="images/icon-error.svg"
+              class="form-field__icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <span id="lastName-error" class="form-field__error" hidden
+              >Last Name cannot be empty</span
+            >
+          </div>
+
+          <!-- Campo Email -->
+          <div class="form-field">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-field__input form-field__input--invalid-text"
+              placeholder="Email Address"
+              aria-describedby="email-error"
+              aria-invalid="false"
+            />
+            <img
+              src="images/icon-error.svg"
+              class="form-field__icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <span id="email-error" class="form-field__error" hidden
+              >Looks like this is not an email</span
+            >
+          </div>
+
+          <!-- Campo Senha -->
+          <div class="form-field">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-field__input"
+              placeholder="Password"
+              aria-describedby="password-error"
+              aria-invalid="false"
+            />
+            <img
+              src="images/icon-error.svg"
+              class="form-field__icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <span id="password-error" class="form-field__error" hidden
+              >Password cannot be empty</span
+            >
+          </div>
+          <button type="submit" class="form-button">
+            Claim your free trial
+          </button>
+          <span class="form-terms">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </span>
+        </form>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jamilly Ferreira</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
