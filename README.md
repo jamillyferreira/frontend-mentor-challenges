@@ -19,37 +19,33 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 > Mas cada projeto aqui me ensinou algo novo, e continuo evoluindo a cada desafio.
 >
 > Alguns projetos usam designs do Figma que exigem assinatura Pro para detalhes completos, então podem não estar perfeitos em termos de pixels.
+> 
+> Feedbacks construtivos são sempre bem-vindos! Sinta-se à vontade para abrir uma issue ou entrar em contato.
 
-
-##  Desafios concluídos
 
 ## ✅ Desafios concluídos
 
-### 🟢 Newbie
+### faq-accordion
+![Status](https://img.shields.io/badge/Status-Completo-success)
+![Dificuldade](https://img.shields.io/badge/Dificuldade-Newbie-blue)
 
-<details open>
-<summary><b>QR code component</b></summary>
-
-![QR Code Component](./faq-accordion/screenshot.png)
+![Faq Accordion](./faq-accordion/screenshot.png)
 
 **Tecnologias:** 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
 
-**Links:** [Live Demo](link-aqui) • [Código](./qr-code-component)
+**Links:** 
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
+- [Código-fonte](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
 
-</details>
 
+## 🌐 Conecte-se comigo
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+- LinkedIn: [Jamilly Ferreira](https://www.linkedin.com/in/jamillyferreira)
+- Instagram: [@dev_jamilly](https://www.instagram.com/dev_jamilly?igsh=bmc4YXAweXNjMzR5)
+- Frontend Mentor: [@jamillyferreira](https://www.frontendmentor.io/profile/jamillyferreira)
 
-## Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![instagram](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
 
