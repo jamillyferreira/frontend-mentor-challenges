@@ -19,7 +19,7 @@ O projeto foi desenvolvido com o objetivo de criar uma interface interativa e re
 ## Funcionalidades
 
 - Interação de abrir/fechar ao clicar nas perguntas
-- Implementação semântica utilizando <details> e <summary>
+- Implementação semântica utilizando `<details>` e `<summary>`
 - Design responsivo com abordagem mobile-first
 - Estados visuais para hover
 - Acessibilidade aprimorada
@@ -30,9 +30,9 @@ O projeto foi desenvolvido com o objetivo de criar uma interface interativa e re
 
 ## Links
 
-- Github pages: [Demo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
-- URL da Solução: [Add solution URL here](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
-- URL do Desafio: [Add solution URL here](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+- [Demo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
+- [URL da Solução](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
+- [URL do Desafio](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 
 ## Tecnologias utilizadas
 
@@ -47,7 +47,7 @@ O projeto foi desenvolvido com o objetivo de criar uma interface interativa e re
 Durante o desenvolvimento deste projeto, pude aprimorar meus conhecimentos em:
 
 - Aplicação de HTML semântico para melhorar acessibilidade e estrutura
-- Utilização de <details> e <summary> como solução nativa para accordions
+- Utilização de `<details>` e `<summary>` como solução nativa para accordions
 - Implementação de responsividade fluida usando `clamp()`
 - Organização escalável de CSS seguindo a metodologia **BEM**
 - Criação de interfaces responsivas com foco na experiência do usuário
