@@ -1,6 +1,9 @@
-# Frontend Mentor - Solução do componente introdutório com formulário de cadastro
+# Frontend Mentor - Intro component with sign up form
 
-Esta é uma solução para o desafio [Intro component with sign up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) d
+Esta é uma solução para o desafio [Intro component with sign up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+
+O objetivo do desafio é construir um layout responsivo com um formulário de cadastro contendo validações e feedback visual para o usuário.
+
 
 ## Sumário
 
