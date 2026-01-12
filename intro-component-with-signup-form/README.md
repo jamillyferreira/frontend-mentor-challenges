@@ -13,7 +13,7 @@ O objetivo do desafio é construir um layout responsivo com um formulário de ca
   - [Links](#links)
 - [Meu processo](#meu-processo)
   - [Construído com](#construído-com)
-  - [Construído com](#construído-com)
+  - [O que aprendi](#o-que-aprendi)
 - [Autora](#autora)
 
 ## Visão geral
