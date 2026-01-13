@@ -25,6 +25,23 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 
 ## ✅ Desafios concluídos
 
+### Intro Section With Dropdown Navigation
+![Status](https://img.shields.io/badge/Status-Completo-success)
+![Dificuldade](https://img.shields.io/badge/Dificuldade-Junior-green)
+
+![intro section with dropdown navigation](./intro-section-with-dropdown-navigation/screenshot.png)
+
+**Tecnologias:** 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+
+**Links:** 
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-section-with-dropdown-navigation/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-section-with-dropdown-navigation)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation---html-css3-and-js-Vo5wk2lo-o)
+
+  
 ### intro-component-with-signup-form
 ![Status](https://img.shields.io/badge/Status-Completo-success)
 ![Dificuldade](https://img.shields.io/badge/Dificuldade-Newbie-blue)
