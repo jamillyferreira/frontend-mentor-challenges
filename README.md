@@ -36,7 +36,6 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 
-
 **Links:** 
 - [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
 - [Código-fonte](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
