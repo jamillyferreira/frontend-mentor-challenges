@@ -35,9 +35,9 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- [Demo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
-- [URL da Solução](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
-- [URL do Desafio](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-component-with-signup-form/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-component-with-signup-form)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-html-css-and-javascript-qwuewryB19)
 
 ---
 
