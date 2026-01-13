@@ -33,9 +33,9 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-component-with-signup-form/)
-- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-component-with-signup-form)
-- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-html-css-and-javascript-qwuewryB19)
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-section-with-dropdown-navigation/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-section-with-dropdown-navigation)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation---html-css3-and-js-Vo5wk2lo-o)
 
 ---
 
