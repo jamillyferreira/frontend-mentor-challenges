@@ -25,6 +25,25 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 
 ## ✅ Desafios concluídos
 
+### intro-component-with-signup-form
+![Status](https://img.shields.io/badge/Status-Completo-success)
+![Dificuldade](https://img.shields.io/badge/Dificuldade-Newbie-blue)
+
+![intro-component-with-signup-form](./intro-component-with-signup-form/screenshot.png)
+
+**Tecnologias:** 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+
+
+**Links:** 
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
+- [Código-fonte](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
+
+---
+
 ### faq-accordion
 ![Status](https://img.shields.io/badge/Status-Completo-success)
 ![Dificuldade](https://img.shields.io/badge/Dificuldade-Newbie-blue)
@@ -34,6 +53,7 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 **Tecnologias:** 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+
 
 **Links:** 
 - [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
