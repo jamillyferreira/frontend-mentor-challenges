@@ -37,9 +37,9 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 
 **Links:** 
-- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
-- [Código-fonte](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
-- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-component-with-signup-form/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-component-with-signup-form)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-html-css-and-javascript-qwuewryB19)
 
 ---
 
@@ -53,12 +53,12 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
 
-
 **Links:** 
 - [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/faq-accordion/)
-- [Código-fonte](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/faq-accordion)
 - [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-responsivo-7hNpM_hFlj)
 
+---
 
 ## 🌐 Conecte-se comigo
 
