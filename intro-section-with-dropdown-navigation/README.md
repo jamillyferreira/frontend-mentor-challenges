@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro component with sign up form
+# Frontend Mentor - Intro Section With Dropdown Navigation
 
 Esta é uma solução para o desafio [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5).
 
