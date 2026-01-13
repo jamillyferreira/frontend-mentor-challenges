@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        <img src="images/logo.svg" class="logo" alt="Nome da Empresa" />
+      </a>
+
+      <button class="header__btn-menu" id="menuBtn">
+        <img src="images/icon-menu.svg" alt="" />
+      </button>
+
+      <nav class="nav">
+        <button class="nav__btn-close" id="closeBtn">
+          <img src="images/icon-close-menu.svg" alt="" />
+        </button>
+        <ul class="nav-menu">
+          <!-- Features -->
+          <li class="nav-item">
+            <button
+              class="nav-btn-submenu"
+              aria-expanded="false"
+              aria-controls="features"
+              data-submenu="features"
+            >
+              Features
+              <img src="images/icon-arrow-down.svg" class="arrow" alt="" />
+            </button>
+
+            <ul class="submenu" id="features" role="menu">
+              <li class="submenu-item" role="menuitem">
+                <img src="images/icon-todo.svg" alt="" />
+                <a href="#" class="submenu-link">Todo List</a>
+              </li>
+
+              <li class="submenu-item" role="menuitem">
+                <img src="images/icon-calendar.svg" alt="" />
+                <a href="#" class="submenu-link">Calendar</a>
+              </li>
+
+              <li class="submenu-item" role="menuitem">
+                <img src="images/icon-reminders.svg" alt="" />
+                <a href="#" class="submenu-link">Reminders</a>
+              </li>
+
+              <li class="submenu-item" role="menuitem">
+                <img src="images/icon-planning.svg" alt="" />
+                <a href="#" class="submenu-link">Planning</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Company -->
+          <li class="nav-item">
+            <button
+              class="nav-btn-submenu"
+              data-submenu="company"
+              aria-expanded="false"
+              aria-controls="company"
+            >
+              Company
+              <img src="images/icon-arrow-down.svg" class="arrow" alt="" />
+            </button>
+
+            <ul class="submenu" id="company" role="menu">
+              <li class="submenu-item" role="menuitem">
+                <a href="#" class="submenu-link">History</a>
+              </li>
+              <li class="submenu-item" role="menuitem">
+                <a href="#" class="submenu-link">Our Team</a>
+              </li>
+              <li class="submenu-item" role="menuitem">
+                <a href="#" class="submenu-link">Blog</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="#" class="btn-login">Login</a>
+          <a href="#" class="btn-register">Register</a>
+        </div>
+      </nav>
+      <div class="nav-overlay" id="overlay"></div>
+    </header>
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <img src="images/image-hero-mobile.png" alt="" />
+          </picture>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Make remote work</h1>
+          <p class="hero__description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="hero__cta">Learn more</button>
+          <div class="hero__clients">
+            <img src="images/client-databiz.svg" alt="Databiz" />
+            <img src="images/client-audiophile.svg" alt="Audiophile" />
+            <img src="images/client-meet.svg" alt="Meet" />
+            <img src="images/client-maker.svg" alt="Maker" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/jamillyferreira/"
+          >Jamilly Ferreira</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
