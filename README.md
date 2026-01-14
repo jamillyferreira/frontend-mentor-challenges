@@ -15,7 +15,7 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 ## Nota pessoal
 
 > [!NOTE]
-> Ainda sou uma Dev em formação, então você pode encontrar código que dá pra melhorar ou propriedades CSS que poderiam ser mais enxutas.
+> Sou uma Dev em formação, então você pode encontrar código que dá pra melhorar ou propriedades CSS que poderiam ser mais enxutas.
 > Mas cada projeto aqui me ensinou algo novo, e continuo evoluindo a cada desafio.
 >
 > Alguns projetos usam designs do Figma que exigem assinatura Pro para detalhes completos, então podem não estar perfeitos em termos de pixels.
@@ -25,7 +25,26 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 
 ## ✅ Desafios concluídos
 
-### Intro Section With Dropdown Navigation
+### news-homepage-main
+![Status](https://img.shields.io/badge/Status-Completo-success)
+![Dificuldade](https://img.shields.io/badge/Dificuldade-Junior-green)
+
+![news-homepage-main](./news-homepage-main/screenshot.png)
+
+**Tecnologias:** 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+
+### Links
+
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/news-homepage-main/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/news-homepage-main)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage---html-css-and-js-W416Qf_WUT)
+  
+---
+
+### intro-section-with-dropdown-navigation
 ![Status](https://img.shields.io/badge/Status-Completo-success)
 ![Dificuldade](https://img.shields.io/badge/Dificuldade-Junior-green)
 
@@ -41,7 +60,8 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 - [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-section-with-dropdown-navigation)
 - [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation---html-css3-and-js-Vo5wk2lo-o)
 
-  
+---
+
 ### intro-component-with-signup-form
 ![Status](https://img.shields.io/badge/Status-Completo-success)
 ![Dificuldade](https://img.shields.io/badge/Dificuldade-Newbie-blue)
