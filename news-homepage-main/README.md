@@ -30,8 +30,9 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/news-homepage-main/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/news-homepage-main)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage---html-css-and-js-W416Qf_WUT)
 
 ## Meu processo
 
