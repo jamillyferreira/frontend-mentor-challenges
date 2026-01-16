@@ -24,6 +24,23 @@ Cada desafio inclui designs profissionais (Figma, Sketch ou Adobe XD) e um conju
 
 
 ## ✅ Desafios concluídos
+### todo-app
+![Status](https://img.shields.io/badge/Status-Completo-success)
+![Dificuldade](https://img.shields.io/badge/Dificuldade-intermediate-gold)
+
+![todo-app](./todo-app/screenshot.png)
+
+**Tecnologias:** 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+
+### Links
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/todo-app/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/todo-app)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/todo-app---html-css-and-js-7P0vMtjN3E)
+
+---
 
 ### news-homepage-main
 ![Status](https://img.shields.io/badge/Status-Completo-success)
