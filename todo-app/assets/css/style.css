@@ -222,7 +222,7 @@ body {
   content: "";
   width: 10px;
   height: 10px;
-  background: url(/images/icon-check.svg) no-repeat center;
+  background: url('../images/icon-check.svg') no-repeat center;
   background-size: contain;
 }
 .todo-item__checkbox:checked ~ .todo-item__checkmark ~ .todo-item__text {
