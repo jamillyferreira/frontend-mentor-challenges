@@ -199,7 +199,10 @@ function toggleTheme() {
 
 function updateThemeIcon(theme) {
   const icon = themeToggle.querySelector("img");
-  icon.src = theme === "dark" ? "images/icon-sun.svg" : "images/icon-moon.svg";
+  icon.src =
+    theme === "dark"
+      ? "assets/images/icon-sun.svg"
+      : "assets/images/icon-moon.svg";
 }
 
 function loadSavedTheme() {

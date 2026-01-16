@@ -22,7 +22,7 @@
 }
 
 [data-theme="dark"] {
-  --bg-image: url("/images/bg-mobile-dark.jpg");
+  --bg-image: url("../images/bg-mobile-dark.jpg");
   --bg-body: hsl(235, 21%, 11%);
   --bg-card: hsl(235, 24%, 19%);
 
@@ -37,7 +37,7 @@
 
 /* === Light Theme === */
 [data-theme="light"] {
-  --bg-image: url("/images/bg-mobile-light.jpg");
+  --bg-image: url("../images/bg-mobile-light.jpg");
   --bg-body: hsl(0, 0%, 98%);
   --bg-card: hsl(0, 0%, 98%);
 
@@ -356,9 +356,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .header-bg {
-    background-image: url("/images/bg-desktop-dark.jpg");
-    background-size: cover;
+  [data-theme="dark"] {
+    --bg-image: url("../images/bg-desktop-dark.jpg");
   }
   .container {
     max-width: 600px;
