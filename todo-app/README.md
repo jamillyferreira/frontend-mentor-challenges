@@ -14,7 +14,7 @@ O objetivo deste projeto é desenvolver um Todo App funcional e responsivo utili
   - [Construído com](#construído-com)
   - [O que aprendi](#o-que-aprendi)
   - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
-- [Autor](#autor)
+- [Autora](#autora)
 
 ---
 
@@ -45,9 +45,9 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/intro-component-with-signup-form/)
-- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/intro-component-with-signup-form)
-- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-html-css-and-javascript-qwuewryB19)
+- [Demo ao vivo](https://jamillyferreira.github.io/frontend-mentor-challenges/todo-app/)
+- [Repositório](https://github.com/jamillyferreira/frontend-mentor-challenges/tree/main/todo-app)
+- [Solução no Frontend Mentor](https://www.frontendmentor.io/solutions/todo-app---html-css-and-js-7P0vMtjN3E)
 
 ---
 
@@ -66,7 +66,7 @@ Os usuários devem ser capazes de:
 
 ---
 
-### What I learned
+### O que aprendi
 
 Nesse projeto, pratiquei e reforcei diversos conceitos importantes de front-end, como:
 
