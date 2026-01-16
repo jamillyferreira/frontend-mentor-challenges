@@ -87,7 +87,7 @@ function createTaskElement(task) {
         <p class="todo-item__text">${task.text}</p>
     </label>
     <button class="todo-item__remove-btn" aria-label="Remove task">
-      <img src="images/icon-cross.svg" alt="Remove task" />
+      <img src="assets/images/icon-cross.svg" alt="Remove task" />
     </button>
   `;
   return li;
