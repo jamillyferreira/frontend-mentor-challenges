@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <title>Todo app</title>
+  </head>
+  <body data-theme="dark">
+    <div class="header-bg"></div>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Todo</h1>
+        <button
+          class="header__theme-toggle"
+          id="themeToggle"
+          aria-label="Switch theme"
+        >
+          <img src="images/icon-sun.svg" alt="" />
+        </button>
+      </header>
+      <form class="task-creator" id="newTaskForm">
+        <div class="task-creator__circle"></div>
+        <input
+          type="text"
+          class="task-creator__input"
+          placeholder="Create a new todo..."
+          aria-label="New task"
+          id="newTaskInput"
+        />
+      </form>
+
+      <main class="main" id="todoContainer">
+        <section class="todo-content">
+          <ul class="todo-content__items" id="todoItems">
+            <!-- Placeholder for dynamically added tasks -->
+          </ul>
+          <div class="todo-content__info">
+            <p class="todo-content__items-left">
+              <!-- number será adicionando dinamicamente -->
+              <span
+                class="todo-content__items-number"
+                id="itemsLeftNumber"
+              ></span>
+              items left
+            </p>
+            <button
+              type="button"
+              class="todo-content__clear-btn"
+              id="clearCompletedBtn"
+            >
+              Clear Completed
+            </button>
+          </div>
+        </section>
+        <div class="todo-filter">
+          <button type="button" class="todo-filter__btn-all">All</button>
+          <button type="button" class="todo-filter__btn-active">Active</button>
+          <button type="button" class="todo-filter__btn-completed">
+            Completed
+          </button>
+        </div>
+        <p class="drag-hint">Drag and drop to reorder list</p>
+
+        <div class="empty-state" id="emptyState">
+          <svg
+            class="empty-state__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M9 11l3 3L22 4"></path>
+            <path
+              d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+            ></path>
+          </svg>
+          <h2 class="empty-state__title">No tasks yet!</h2>
+          <p class="empty-state__description">
+            Add your first task above to get started organizing your day.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/jamillyferreira/" target="_blank"
+        >Jamilly Ferreira</a
+      >.
+    </footer>
+  </body>
+</html>
