@@ -7,54 +7,93 @@ const clearCompletedBtn = document.getElementById("clearCompletedBtn");
 const filterBtns = document.querySelectorAll(".todo-filter button");
 const body = document.body;
 
+// === ESTADO ===
 let tasks = [];
 let currentFilter = "all";
+let sortableInstance = null;
 
-// operações da task
-function addTask(text) {
-  const newTask = {
-    id: Date.now(),
-    text: text,
+function generateId() {
+  return Date.now();
+}
+
+// === GESTAO DE ORDEM ===
+function getNextOrder() {
+  // cria uma nova posicao
+  if (tasks.length === 0) return 0;
+  const maxOrder = Math.max(...tasks.map((task) => task.order));
+  return maxOrder + 1;
+}
+
+function normalizeOrder() {
+  // limpa e reorgniza tudo
+  tasks.sort((a, b) => a.order - b.order);
+  tasks.forEach((task, index) => {
+    task.order = index;
+  });
+}
+
+function reorderAfterRemoval(removedOrder) {
+  // ajusta a ordem após remover
+  tasks.forEach((task) => {
+    if (task.order > removedOrder) {
+      task.order--;
+    }
+  });
+}
+
+// === OPERAÇÕES DA TASK ===
+function createTask(text) {
+  return {
+    id: generateId(),
+    text: text.trim(),
     completed: false,
+    order: getNextOrder(),
   };
+}
+
+function addTask(text) {
+  if (!text.trim()) return;
+
+  const newTask = createTask(text);
   tasks.push(newTask);
   saveTasks();
   renderTasks();
 }
 
-// remove uma task pelo id
-function remove(taskId) {
+function findTaskById(taskId) {
+  return tasks.find((task) => task.id === taskId);
+}
+
+function removeTask(taskId) {
+  const task = findTaskById(taskId);
+
+  if (!task) return;
+
+  const removedOrder = task.order;
   tasks = tasks.filter((task) => task.id !== taskId);
+  reorderAfterRemoval(removedOrder);
+
   saveTasks();
   renderTasks();
 }
 
-function clearCompleted() {
-  tasks = tasks.filter((task) => !task.completed);
-  saveTasks();
-  renderTasks();
-}
-
-function saveTasks() {
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-}
-
-function loadTasks() {
-  const savedTasks = localStorage.getItem("tasks");
-  return savedTasks ? JSON.parse(savedTasks) : [];
-}
-
-// Alterna o estado de completado de uma task
 function toggleTaskComplete(taskId) {
-  const task = tasks.find((t) => t.id === taskId);
-  if (task) {
-    task.completed = !task.completed;
-    saveTasks();
-    renderTasks();
-  }
+  const task = findTaskById(taskId);
+  if (!task) return;
+
+  task.completed = !task.completed;
+  saveTasks();
+  renderTasks();
 }
 
-// Retorna as tasks filtradas baseada no filtro atual
+function clearCompletedTasks() {
+  tasks = tasks.filter((task) => !task.completed);
+  normalizeOrder();
+  saveTasks();
+  renderTasks();
+}
+
+// === FILTRAGEM ===
 function getFilteredTasks() {
   switch (currentFilter) {
     case "active":
@@ -66,7 +105,13 @@ function getFilteredTasks() {
   }
 }
 
-// Criar lista de task
+function setFilter(filter) {
+  currentFilter = filter;
+  updateActiveFilter();
+  renderTasks();
+}
+
+// === RENDERIZAÇÃO ===
 function createTaskElement(task) {
   const li = document.createElement("li");
   li.className = "todo-item";
@@ -96,17 +141,59 @@ function createTaskElement(task) {
 function renderTasks() {
   todoItems.innerHTML = "";
 
-  const filteredTasks = getFilteredTasks();
+  const sortedTasks = [...tasks].sort((a, b) => a.order - b.order);
+  const tasksToRender = getFilteredTasks();
 
-  filteredTasks.forEach((task) => {
+  const orderedTasksToRender = sortedTasks.filter((task) =>
+    tasksToRender.some((t) => t.id === task.id)
+  );
+
+  orderedTasksToRender.forEach((task) => {
     const li = createTaskElement(task);
     todoItems.appendChild(li);
   });
 
   updateItemsLeft();
   updateEmptyState();
+}
 
-  setupDragAndDrop();
+// === HANDLERS DE EVENTOS ===
+function handleNewTaskSubmit(e) {
+  e.preventDefault();
+  const taskText = newTaskInput.value.trim();
+  addTask(taskText);
+  newTaskInput.value = "";
+}
+
+function handleTaskListClick(e) {
+  const taskItem = e.target.closest(".todo-item");
+  if (!taskItem) return;
+
+  const taskId = Number(taskItem.dataset.id);
+
+  if (e.target.classList.contains("todo-item__checkbox")) {
+    toggleTaskComplete(taskId);
+  }
+  if (e.target.closest(".todo-item__remove-btn")) {
+    removeTask(taskId);
+  }
+}
+
+function handleFilterClick(e) {
+  const btn = e.target;
+  if (btn.classList.contains("todo-filter__btn-all")) {
+    setFilter("all");
+  } else if (btn.classList.contains("todo-filter__btn-active")) {
+    setFilter("active");
+  } else if (btn.classList.contains("todo-filter__btn-completed")) {
+    setFilter("completed");
+  }
+}
+
+// === ATUALIZAÇÃO DE UI ===
+function updateItemsLeft() {
+  const activeTasks = tasks.filter((task) => !task.completed).length;
+  itemsLeftSpan.textContent = activeTasks;
 }
 
 function updateActiveFilter() {
@@ -126,68 +213,21 @@ function updateActiveFilter() {
   });
 }
 
-function setFilter(filter) {
-  currentFilter = filter;
-  updateActiveFilter();
-  renderTasks();
-}
-
-// Handles
-function handleNewTaskSubmit(e) {
-  e.preventDefault();
-  const taskText = newTaskInput.value.trim();
-  if (taskText === "") return;
-  addTask(taskText);
-  newTaskInput.value = "";
-}
-
-function handleTaskListClick(e) {
-  const taskItem = e.target.closest(".todo-item");
-  if (!taskItem) return;
-
-  const taskId = Number(taskItem.dataset.id);
-  if (e.target.classList.contains("todo-item__checkbox")) {
-    toggleTaskComplete(taskId);
-  }
-  if (e.target.closest(".todo-item__remove-btn")) remove(taskId);
-}
-
-function handleFilterClick(e) {
-  const btn = e.target;
-  if (btn.classList.contains("todo-filter__btn-all")) {
-    setFilter("all");
-  } else if (btn.classList.contains("todo-filter__btn-active")) {
-    setFilter("active");
-  } else if (btn.classList.contains("todo-filter__btn-completed")) {
-    setFilter("completed");
-  }
-}
-
-function updateItemsLeft() {
-  const activeTasks = tasks.filter((task) => !task.completed).length;
-  itemsLeftSpan.textContent = activeTasks;
-}
-
 function updateEmptyState() {
   const emptyState = document.getElementById("emptyState");
   const todoContent = document.querySelector(".todo-content");
   const todoFilter = document.querySelector(".todo-filter");
   const dragHint = document.querySelector(".drag-hint");
 
-  if (tasks.length === 0) {
-    emptyState.style.display = "block";
-    todoContent.style.display = "none";
-    todoFilter.style.display = "none";
-    dragHint.style.display = "none";
-  } else {
-    emptyState.style.display = "none";
-    todoContent.style.display = "block";
-    todoFilter.style.display = "flex";
-    dragHint.style.display = "block";
-  }
+  const hasTasks = tasks.length > 0;
+
+  emptyState.style.display = hasTasks ? "none" : "block";
+  todoContent.style.display = hasTasks ? "block" : "none";
+  todoFilter.style.display = hasTasks ? "flex" : "none";
+  dragHint.style.display = hasTasks ? "block" : "none";
 }
 
-// Funcao Toggle Theme
+// === TEMA ===
 function toggleTheme() {
   const currentTheme = body.dataset.theme;
   const newTheme = currentTheme === "dark" ? "light" : "dark";
@@ -211,8 +251,12 @@ function loadSavedTheme() {
   updateThemeIcon(savedTheme);
 }
 
+// === DRAG AND DROP ===
 function setupDragAndDrop() {
-  new Sortable(todoItems, {
+  if (sortableInstance) {
+    sortableInstance.destroy();
+  }
+  sortableInstance = new Sortable(todoItems, {
     animation: 150,
     ghostClass: "sortable-ghost",
     chosenClass: "sortable-chosen",
@@ -224,21 +268,41 @@ function setupDragAndDrop() {
       );
       tasks = newOrder.map((id) => tasks.find((task) => task.id === id));
       saveTasks();
+      console.log("nova ordem:", tasks);
     },
   });
 }
 
-// Event Listeners
-themeToggle.addEventListener("click", toggleTheme);
-newTaskForm.addEventListener("submit", handleNewTaskSubmit);
-todoItems.addEventListener("click", handleTaskListClick);
-clearCompletedBtn.addEventListener("click", clearCompleted);
-filterBtns.forEach((btn) => btn.addEventListener("click", handleFilterClick));
+// === LOCAL STORAGE === 
+function saveTasks() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function loadTasks() {
+  const savedTasks = localStorage.getItem("tasks");
+  return savedTasks ? JSON.parse(savedTasks) : [];
+}
+
+// === INICIALIZAÇÃO ===
+function setupEventListener() {
+  themeToggle.addEventListener("click", toggleTheme);
+  newTaskForm.addEventListener("submit", handleNewTaskSubmit);
+  todoItems.addEventListener("click", handleTaskListClick);
+  clearCompletedBtn.addEventListener("click", clearCompletedTasks);
+  filterBtns.forEach((btn) => btn.addEventListener("click", handleFilterClick));
+}
+
+function initializeTasks() {
+  tasks = loadTasks();
+  normalizeOrder();
+}
 
 function init() {
   loadSavedTheme();
-  tasks = loadTasks();
+  initializeTasks();
+  setupEventListener();
   renderTasks();
   setupDragAndDrop();
 }
+
 init();
